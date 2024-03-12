@@ -1,0 +1,110 @@
+.tevas {
+  width: 600px;
+  height: 600px;
+  background-color: aqua;
+  position: relative;
+  left: 500px;
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.circle.red {
+  background-color: red;
+  position: absolute;
+  left: 200px;
+  top: 200px;
+}
+
+.btn {
+  font-size: 50px;
+  padding: 20px 40px;
+  background-color: rgb(187, 200, 204);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.btn svg {
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+.btn span {
+  position: relative;
+  top: -20px;
+  transition: all 0.3s;
+}
+.btn:hover svg {
+  top: -20px;
+  left: -40px;
+}
+.btn:hover span {
+  top: 20px;
+  left: 40px;
+}
+.circle.green {
+  background-color: green;
+}
+.img-konteineris {
+  border: 1px solid black;
+  padding: 20px;
+  width: 300px;
+  position: relative;
+  margin: 20px;
+  height: 535px;
+}
+img {
+  width: 300px;
+  height: auto;
+  position: absolute;
+}
+.img1 {
+  opacity: 1;
+}
+.img2 {
+  opacity: 0;
+}
+.img-konteineris:hover .img1 {
+  opacity: 0;
+}
+
+.img-konteineris:hover .img2 {
+  opacity: 1;
+}
+
+.img-konteineris2 {
+  border: 1px solid black;
+  padding: 20px;
+  width: 300px;
+  margin: 20px;
+  position: relative;
+  height: 540px;
+  overflow: hidden;
+}
+.img-konteineris2 img {
+  position: absolute;
+  display: inline-block;
+}
+.img-konteineris2 .img11 {
+  left: 20px;
+  top: 20px;
+  transition: all 0.5s;
+}
+.img-konteineris2 .img22 {
+  left: 540px;
+  top: 20px;
+
+  transition: all 0.5s;
+}
+
+.img-konteineris2:hover .img11 {
+  left: -520px;
+}
+.img-konteineris2:hover .img22 {
+  left: 20px;
+}
