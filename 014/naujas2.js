@@ -68,7 +68,7 @@ for (let kintamojoPaskirtis = 1; kintamojoPaskirtis <= 3; kintamojoPaskirtis++) 
 hello: for (let i = 1; i <= 3; i++) {
 
     console.log('BIG:', i);
-
+1
     for (let i = 1; i <= 3; i++) {
         console.log('small:', i);
         if (i == 2) {
