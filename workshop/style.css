@@ -92,3 +92,151 @@
   color: #9a54bc;
   cursor: pointer;
 }
+
+.mainkonteineris2 {
+  margin-top: 250px;
+}
+
+.allelipsewithbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+
+.allelipsewithbutton img {
+  position: absolute;
+}
+
+.smallelipse {
+  top: -160px;
+}
+
+.rectangle {
+  top: -150px;
+}
+
+.collab {
+  top: -45px;
+}
+
+.elipsebutton {
+  position: absolute;
+  bottom: -140px;
+  padding: 5px 15px;
+  border: none;
+  border: 2px solid #9a54bc;
+  background-color: white;
+  border-radius: 5px;
+  color: #9a54bc;
+}
+.fiveiconscontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 300px;
+  gap: 50px;
+  
+}
+.fiveiconscontainer h2 {
+  font-size: 36px;
+
+}
+
+.fiveiconscontainer2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+
+.fiveiconscontainer2 img {
+width: 100px;
+}
+
+.howhelpcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+  gap: 50px;
+
+}
+.paraphonecontainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paracontainer {
+  width: 50%;
+}
+
+.howhelpbuttons {
+
+width: 100%;
+background-color: white;
+border: none;
+border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 35px;
+gap: 5px;
+padding: 0 2px 0 2px;
+box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.72);
+-webkit-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.72);
+-moz-box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.72);
+}
+
+.howhelpbuttons button {
+  width: 50%;
+  padding: 6px 0px 6px 0px;
+  border: none;
+  background-color: transparent;
+}
+
+.vendorappbtn:hover {
+  background-color: #60267F;
+  border: #9A54BC 2px solid;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+.supervisionbtn:hover {
+  background-color: #60267F;
+  border: #9A54BC 2px solid;
+  border-radius: 3px;
+  color: white;
+  cursor: pointer;
+}
+
+.alltextcontainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 80%;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.textbox {
+  background-color: #F2F2F2;
+  width: 70%;
+  padding: 20px 50px;
+  font-weight: 600px;
+  font-size: 10px;
+}
+
+.imgcontainer img {
+  width: 200px;
+  margin-left: 120px;
+}
+
+.imgcontainer {
+  width: 50%;
+
+}
