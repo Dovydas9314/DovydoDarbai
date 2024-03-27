@@ -240,3 +240,114 @@ box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.72);
   width: 50%;
 
 }
+
+.videocontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 150px;
+  gap: 50px;
+}
+.videopara {
+  width: 50%;
+  text-align: center;
+}
+
+.cardcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+
+}
+
+.projectsdonecontainer {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+
+}
+
+.projectdonecard p {
+  margin-left: 10px;
+}
+.projectdonecard {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  
+}
+
+.projectdonecard  img {
+  width: 300px;
+
+}
+
+.projectdoneparatext {
+  color: #60267F;
+  font-weight: 600;
+
+}
+
+.projectdoneparanumber {
+  font-weight: 600;
+
+}
+
+.readytostartcontainer {
+  margin-top: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.readytostartheader {
+  font-size: 36px;
+}
+
+.readytostartspan {
+  font-size: 14px;
+  color: #A79D9D;
+}
+
+.readytostartdiscountcontainer {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.readystartmonthly {
+  color: #A79D9D;
+  font-size: 14px;
+}
+.readytostartyearly {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.readytostartdiscount {
+  background-color: #FFE87A;
+  font-size: 10px;
+  padding: 2px 7px;
+}
+
+.bigcardscontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.bigcard {
+  border: 0.5px solid #AAAAAA;
+  padding: 20px;
+  width: 300px;
+  height: 500px;
+  border-radius: 4px;  
+}
