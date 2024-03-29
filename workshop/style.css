@@ -345,9 +345,421 @@ box-shadow: 0px 4px 10px 0px rgba(0,0,0,0.72);
   gap: 40px;
 }
 .bigcard {
-  border: 0.5px solid #AAAAAA;
+  border: 0.3px solid #aaaaaa6f;
   padding: 20px;
-  width: 300px;
+  width: 200px;
+  height: 350px;
+  border-radius: 7px;  
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bigcard span {
+  font-weight: 700;
+}
+
+.bigcard h2 {
+  font-size: 28px;
+}
+
+.bigcard button {
+  padding: 10px 15px;
+  border: none;
+  border: 2px solid #2B0236 ;
+  background-color: white;
+  color: #2B0236;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.bigcard ul li {
+  list-style: none;
+  font-size: 12px;
+  margin-top: 10px;
+  padding: 0 0 0 5px;
+}
+
+.bigcard ul li::marker {
+  content: "▶";
+}
+
+.bigcardthree {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #56E6A5;
+
+}
+.bigcardthree h2 {
+  width: 50%;
+}
+
+.bigcardthree p {
+  font-size: 12px;
+}
+
+.reviewcontainer {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.stars {
+  width: 200px;
+}
+.reviewcontainer p {
+  width: 700px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+}
+.reviewparacontainer {
+ width: 80%;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+
+}
+.reviewparacontainer::after {
+  content: "\F138";
+  font-family: bootstrap-icons;
+  font-size: 48px;
+
+
+}
+.reviewparacontainer::before {
+  content: "\F12F";
+  font-family: bootstrap-icons;
+  font-size: 48px;
+
+
+}
+.reviewphoto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.downloadAppContainer {
+  margin-top: 500px;
+}
+
+.downloadAppBackground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #9A54BC;
+}
+
+.downloadAppBackground h2 {
+  color: white;
+  font-size: 60px;
+  padding-top: 200px;
+}
+
+.downloadAppButtons {
+  padding-bottom: 200px;
+}
+
+.downloadAppButtons button {
+  margin: 64px 10px 0 10px;
+}
+
+.buttonFirst {
+  padding: 24px 50px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #9A54BC;
+  border-radius: 8px;
+  width: 240px;
+  background-color: white;
+  border: none;
+}
+
+.buttonFirst:hover {
+  background-color: #9A54BC;
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.buttonSecAndThird {
+  padding: 24px 36px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+  border-radius: 8px;
+  width: 240px;
+  background-color: #9A54BC;
+  border: 2px solid white;
+}
+
+.buttonSecAndThird:hover {
+  background-color: white;
+  color: #9A54BC;
+  border: none;
+  cursor: pointer;
+}
+
+
+.joinUsContainer {
+  margin-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.joinUsPara {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.joinUsPara h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.joinUsPara p {
+  margin-top: 30px;
+  width: 75%;
+  text-align: center;
+}
+
+.joinUsPara button {
+  margin-top: 40px;
+  padding: 16px 18px;
+  font-size: 15px;
+  background-color: #9A54BC;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.joinUsPara button:hover {
+  background-color: white;
+  color: #9A54BC;
+  cursor: pointer;
+  border: 2px solid #9A54BC;
+}
+
+.joinUsImg {
+  width: 1300px;
+}
+
+.lineVector {
+  position: absolute;
+  width: 1200px;
+  margin-top: 28px;
+}
+
+.pplPhoto {
+  position: relative;
+  width: 100px;
+}
+
+.pplPhotoOne {
+  left: -25px;
+  top: 8px;
+}
+
+.pplPhotoTwo {
+  left: 20px;
+  top: 188px;
+}
+
+.pplPhotoThree {
+  left: 120px;
+  top: 148px;
+}
+
+.pplPhotoFour {
+  left: 170px;
+  top: 228px;
+}
+
+.pplPhotoFive {
+  left: 250px;
+  top: 258px;
+}
+
+.pplPhotoSix {
+  left: 350px;
+  top: 228px;
+}
+
+.pplPhotoSeven {
+  left: 450px;
+  top: 248px;
+}
+
+.pplPhotoEight {
+  left: 450px;
+  top: 158px;
+}
+
+.joinUsImg p {
+  color: #9A54BC;
+  font-weight: 600;
+  width: 1060px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+
+.questionHaver {
+  width: 100%;
+  /* margin-top: 500px; */
+  display: flex;
+  justify-content: center;
+}
+
+.questionHaverContainer {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.questionText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.questionText h2 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.questionText p {
+  margin-top: 40px;
+  font-weight: 600;
+}
+
+.questionMap img {
+  width: 800px;
+}
+
+.footer-container {
+  background-color: #fff;
   height: 500px;
-  border-radius: 4px;  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+ 
+.footer-purple {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  background-color: #fcf8fe;
+}
+ 
+.footer-text-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 20px;
+  margin-top: -85px;
+}
+ 
+.footer-text {
+  display: flex;
+  justify-content: space-between;
+}
+ 
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0 50px;
+}
+ 
+.footer-logo {
+  width: 150px;
+  margin-left: 50px;
+}
+ 
+.footer-left p {
+  width: 280px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+}
+ 
+.footer-left-icons {
+  display: flex;
+  gap: 20px;
+}
+ 
+.footer-left-icons img {
+  width: 30px;
+}
+ 
+.footer-right-list {
+  display: flex;
+  gap: 100px;
+}
+ 
+.footer-right-list ul {
+  list-style: none;
+}
+ 
+.footer-right-list ul li .footer-right-list-header {
+  color: #000;
+  font-weight: 700;
+  font-size: 18px;
+}
+ 
+.footer-right-list ul li a {
+  text-decoration: none;
+  color: #60267f;
+  display: flex;
+  margin-bottom: 25px;
+}
+ 
+.footer-contact-us {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+ 
+.footer-contact-us-span {
+  color: #000;
+  font-weight: 700;
+  margin-right: 20px;
+  font-size: 18px;
+}
+ 
+.footer-contact-us-para {
+  color: #9a54bc;
+}
+ 
+.footer-date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #60267f;
+  width: 100%;
+  height: 24px;
+  color: #ffffff;
+  padding: 18px 0;
+  font-size: 16px;
+  font-family: "DM Sans", sans-serif;
 }
