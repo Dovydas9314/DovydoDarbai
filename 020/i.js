@@ -46,6 +46,15 @@ function sandauga6(x) {
     
 }
 
+console.clear()
+
+function Tekstas(tx) {
+    console.log(tx)
+}
+
+const t = "Labas vakaras Lietuva"
+Tekstas(t)
+
 sandauga6(4)
 sandauga6(5)
 
