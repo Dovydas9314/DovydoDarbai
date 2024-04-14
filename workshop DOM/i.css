@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.counter_div {
+    width: 30rem;
+    padding: 1rem;
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+    height: 15rem;
+}
+
+
+.counter_div * {
+    margin-bottom: 2rem;
+}
+
+.count {
+    font-size: 2rem;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.buttons button {
+    padding: 10px 1rem;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.substract {
+    background-color: orangered;
+    color: white;
+
+}
+
+.reset {
+    background-color: white;
+}
+
+.add {
+    background-color: limegreen;
+    color: white;
+}
