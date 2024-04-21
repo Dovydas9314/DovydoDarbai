@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="dom.js" defer></script>
+    <link rel="stylesheet" href="./dom.css" />
+  </head>
+  <body>
+    <style>
+      body {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .counter {
+        width: 30rem;
+        height: 15rem;
+        text-align: center;
+        background-color: aqua;
+        padding: 1rem;
+
+      }
+      .counter > * {
+      margin-top: 2rem;
+      }
+      .count {
+        font-size: 2rem;
+        padding: 3px 8px;
+        border: 2px solid white;
+      }
+
+      .inputText {
+        width: 90%;
+        border: none;
+        padding: 7px;
+        border-radius: 5px;
+      }
+    </style>
+
+    <div class="counter">
+      <h1>Input charter count</h1>
+      <span class="count">0</span>
+      <input type="text" class="inputText"
+    </div>
+  </body>
+</html>
