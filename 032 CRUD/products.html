@@ -4,12 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Products</title>
-    <script src="products.js" defer></script>
+    <script src="http://127.0.0.1:5500/032%20CRUD/products.js" defer></script>
     <link rel="stylesheet" href="products.css" />
 </head>
 <body>
     <main>
-        <div class="modal">
+
+        <div class="products-container">
+
+
+            <div class="products">
+                <div class="buttons">
+                    <button type="button" class="green --create">Create</button>
+                    </div>
+                    <div class="list --list">
+
+                        <div class="product">
+                            <div>
+                            <div class="id">ID:5</div>
+                            <div class="title">Baltas stalas</div>
+                            <div class="price">20.50eur</div>
+                        </div>
+                        <div>
+                        <button type="button" class="brown --edit">Edit</button>
+                        <button type="button" class="red --delete">Delete</button>
+                    </div>
+                        </div>
+                    </div>
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <div class="modal modal--create --modal">
             <div class="card">
                 <h2>Create</h2>
                 <div class="input">
@@ -28,8 +62,8 @@
                 </div>
 
                 <div class="buttons">
-                    <button type="button" class="green">Add</button>
-                    <button type="button" class="gray">Cancel</button>
+                    <button type="button" class="green --submit">Save</button>
+                    <button type="button" class="gray --close">Cancel</button>
                 </div>
             </div>
         </div>
