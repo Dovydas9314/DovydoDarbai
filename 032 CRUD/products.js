@@ -53,6 +53,10 @@ window.addEventListener("load", (_) => {
     write(storeData);
   };
 
+  // LS funkcijos
+
+  // DOM
+
   const showModal = (modal) => (modal.style.display = "flex");
   
   const hideModal = (modal) => {
@@ -61,20 +65,6 @@ window.addEventListener("load", (_) => {
     });
 
     modal.style.display = "none";
-  };
-  const getDataFromForm = (form) => {
-    const data = {};
-    form.querySelectorAll("[name").forEach((i) => {
-      data[i.getAttribute("name")] = i.value;
-    });
-    return data;
-  };
-
-  const store = (_) => {
-    data = getDataFromForm(createModal);
-    storeData(data);
-    hideModal(createModal);
-    showList()
   };
 
   const showList = _ => {
@@ -90,9 +80,32 @@ window.addEventListener("load", (_) => {
 
     listHtml.innerHTML = productsHtml
   }
+
+  // DOM
+
+
+
+  // CRUD  
+  const getDataFromForm = (form) => {
+    const data = {};
+    form.querySelectorAll("[name").forEach((i) => {
+      data[i.getAttribute("name")] = i.value;
+    });
+    return data;
+  };
+
+  const store = (_) => {
+    data = getDataFromForm(createModal);
+    storeData(data);
+    hideModal(createModal);
+    showList()
+  };
+
+  // CRUD
   
 
-  /////////////////////////EVENTS///////////////////
+  // EVENT       
+
 
   closeButtons.forEach((b) => {
     b.addEventListener("click", (_) => {
@@ -104,7 +117,11 @@ window.addEventListener("load", (_) => {
 
   storeButton.addEventListener("click", (_) => store());
 
+  // EVENTS
+
+  // START 
 
   showList()
 
 });
+
