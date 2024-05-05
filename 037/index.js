@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const port = 80
+app.use(express.static('public'));
 
 
 // Router 
@@ -53,6 +54,17 @@ app.get('/narve', (req, res) => {
 res.send(content)
 
 })
+
+app.get('/sumatorius', (req, res) => {
+
+  const a = parseInt(req.query.a);
+  const b = parseInt(req.query.b);
+
+  const rez = a + b;
+  const content = '<h1>SUMA: ' + rez + '</h1>';
+  res.send(content);
+
+});
 
 app.listen(port, () => {
   console.log(`Zoologijos sodas veikia ant ${port} porto`)
