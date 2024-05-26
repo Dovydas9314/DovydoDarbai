@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Zoo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Animal Zoo</h1>
+        <table class="table table-striped mt-3">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Species</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody id="animal-table-body">
+            </tbody>
+        </table>
+        <a href="/add" class="btn btn-primary">Add Animal</a>
+    </div>
+    <script>
+        fetch('/api/animals')
+            .then(response => response.json())
+            .then(animals => {
+                const tableBody = document.getElementById('animal-table-body');
+                animals.forEach(animal => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${animal.name}</td>
+                        <td>${animal.species}</td>
+                        <td>${animal.age}</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            });
+    </script>
+</body>
+</html>
