@@ -1,0 +1,44 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .laukas {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    height: 200px;
+    background-color: green;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .stulpelis {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .medis {
+    background-color: lightgreen;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid darkgreen;
+    border-radius: 5px;
+    color: darkgreen;
+  }
+  
+  .mygtukai {
+    margin-top: 20px;
+  }
+  
+  button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
