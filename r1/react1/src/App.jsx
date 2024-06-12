@@ -1,47 +1,63 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import './App.css';
 import './buttons.scss';
+import Sq from './Components/007/Sq';
+import rand from './Functions/rand';
+
 function App() {
+    const [sq, setSq] = useState(null);
+    const historyRef = useRef([]);
 
-    const [count1, setCount1] = useState(0);
-    const [count2, setCount2] = useState(0);
+    useEffect(() => {
+        setTimeout(() => {
+            setSq(JSON.parse(localStorage.getItem('sq') ?? '[]'));
+        }, 2000);
+    }, [setSq]);
 
-    const greenLoaded = useRef(false);
-
-    // console.log('OUTSIDE USE EFFECT');
-
-    useEffect(_ => {
-        if (!greenLoaded.current) {
-            greenLoaded.current = true;
+    useEffect(() => {
+        if (sq === null) {
             return;
         }
-        console.log('REFRESH BY GREEN!', count1);
-    }, [count1]);
+        localStorage.setItem('sq', JSON.stringify(sq));
+    }, [sq]);
 
-    useEffect(_ => {
-        console.log('REFRESH BY YELLOW!');
-    }, [count2]);
+    const prideti = () => {
+        const numberOfSquares = rand(5, 10);
+        const newSquares = Array.from({ length: numberOfSquares }, () => ({ id: rand(1000000, 9999999) }));
+        historyRef.current.push(sq);
+        setSq(prev => [...newSquares, ...prev]);
+    };
 
-    // useEffect(_ => {
-    //     console.log('REFRESH BY YELLOW OR GREEN!');
-    // }, [count1, count2]);
+    const istrinti = () => {
+        historyRef.current.push(sq);
+        setSq([]);
+    };
 
-    const clickGreen = _ => {
-        setCount1(c => c + 1);
-    }
+    const grizti = () => {
+        if (historyRef.current.length === 0) return;
+        const lastState = historyRef.current.pop();
+        setSq(lastState);
+    };
 
-    const clickYellow = _ => {
-        setCount2(c => c + 1);
-    }
-
+    const destroySq = id => {
+        historyRef.current.push(sq);
+        setSq(s => s.filter(sq => sq.id !== id));
+    };
 
     return (
         <div className="App">
             <header className="App-header">
-                <h1>Use Effect</h1>
+                <div className="sq-bin">
+                    {sq !== null
+                        ? sq.length
+                            ? sq.map(s => <Sq key={s.id} sq={s} destroySq={destroySq} />)
+                            : <div>No squares</div>
+                        : <div>Loading...</div>}
+                </div>
                 <div className="buttons">
-                    <button type="button" className="green" onClick={clickGreen}>{count1}</button>
-                    <button type="button" className="yellow" onClick={clickYellow}>{count2}</button>
+                    <button type="button" className="blue" onClick={prideti}>Pridėti</button>
+                    <button type="button" className="red" onClick={istrinti}>Išvalyti</button>
+                    <button type="button" className="yellow" onClick={grizti}>Atgal</button>
                 </div>
             </header>
         </div>
