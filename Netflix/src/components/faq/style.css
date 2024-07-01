@@ -1,0 +1,36 @@
+.container-fluid.faq {
+    background-color: #000;
+}
+.container-fluid.faq .accordion-button {
+    background-color: #2d2d2d;
+    color: #fff;
+}
+.container-fluid.faq .accordion-body {
+    background-color: rgb(45, 45, 45);
+    color: #fff;
+    box-sizing: none !important;
+}
+.accordion-button:not(.collapsed){
+    box-shadow: none;
+}
+.accordion-button::after {
+    background-image: url('../../../public/plus.svg')
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url('../../../public/minus.svg')
+
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.accordion-item {
+    border: none;
+}
